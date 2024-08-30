@@ -7,7 +7,7 @@ public class LibraryManagement {
         library = new DynamicArray<>();      
     }     
 
-    public void displayBook(int index) { //mem4 
+    public void displayBook(int index) { //mem4 //castino
         String book = library.get(index);
         System.out.println("Book at index " + index + ": " + book); 
     }    
@@ -17,7 +17,7 @@ public class LibraryManagement {
         System.out.println("Book inserted at index " + index + ": " + book);    
     }   
                       
-    public void removeBook(int index) { //mem3   
+    public void removeBook(int index) { //mem3   //manilag
         String removedBook = library.get(index);    
         library.remove(index);    
         System.out.println("Book removed: " + removedBook);     
