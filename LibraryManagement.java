@@ -1,11 +1,11 @@
-import java.util.Scanner; //cj
+import java.util.Scanner; //mem4
 
 public class LibraryManagement {
     private DynamicArray<String> library;
 
     public LibraryManagement() {
         library = new DynamicArray<>();
-    } //cj
+    } //mem4
 
     public void addBook(String book) { //mem2
         library.add(book);
@@ -32,7 +32,7 @@ public class LibraryManagement {
         System.out.println("Total number of books: " + library.size());
     } //mem3
 
-    public static void main(String[] args) { //mem4
+    public static void main(String[] args) { //cj
         LibraryManagement lms = new LibraryManagement();
         Scanner scanner = new Scanner(System.in);
         while (true) {
@@ -45,7 +45,7 @@ public class LibraryManagement {
             System.out.println("6. Exit");
             System.out.print("Choose an option: ");
             int choice = scanner.nextInt();
-            scanner.nextLine(); // consume newline mem4
+            scanner.nextLine(); // consume newline cj
 
             switch (choice) { //mem5
                 case 1:
