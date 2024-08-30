@@ -1,31 +1,31 @@
-import java.util.Scanner;
+import java.util.Scanner; 
 
 public class LibraryManagement {
-    private DynamicArray<String> library;
+    private DynamicArray<String> library; 
 
     public LibraryManagement() {
-        library = new DynamicArray<>();
+        library = new DynamicArray<>(); 
     }
 
-    public void addBook(String book) { //mem2
+    public void addBook(String book) { //mem2 
         library.add(book);
-        System.out.println("Book added: " + book);
+        System.out.println("Book added: " + book); 
     }
 
-    public void insertBook(int index, String book) { //me5
+    public void insertBook(int index, String book) { //me5 
         library.insert(index, book);
-        System.out.println("Book inserted at index " + index + ": " + book);
+        System.out.println("Book inserted at index " + index + ": " + book); 
     }
 
-    public void removeBook(int index) { //mem3
-        String removedBook = library.get(index);
+    public void removeBook(int index) { //mem3 
+        String removedBook = library.get(index); 
         library.remove(index);
-        System.out.println("Book removed: " + removedBook);
+        System.out.println("Book removed: " + removedBook); 
     }
 
-    public void displayBook(int index) { //mem4
+    public void displayBook(int index) { //mem4 
         String book = library.get(index);
-        System.out.println("Book at index " + index + ": " + book);
+        System.out.println("Book at index " + index + ": " + book); 
     }
 
     public void displayTotalBooks() { //mem2
