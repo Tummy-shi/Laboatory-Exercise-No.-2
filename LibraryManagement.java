@@ -65,28 +65,7 @@ public class LibraryManagement {
                     break;
 
               
-                case 3:
-                    System.out.print("Enter index: ");
-                    int removeIndex = scanner.nextInt();
-                    scanner.nextLine(); // consume newline
-                    lms.removeBook(removeIndex);
-                    break;
-                case 4:
-                    System.out.print("Enter index: ");
-                    int displayIndex = scanner.nextInt();
-                    scanner.nextLine(); // consume newline
-                    lms.displayBook(displayIndex);
-                    break;
-                case 5:
-                    lms.displayTotalBooks();
-                    break;
-                case 6:
-                    System.out.println("Exiting...");
-                    scanner.close();
-                    return;
-                default:
-                    System.out.println("Invalid option. Please try again.");
-            }
+             
         }
     }
 }
