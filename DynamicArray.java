@@ -8,10 +8,7 @@ public class DynamicArray<T> { //amancio
         size = 0;
     }
 
-    public void add(T element) { //castino
-        ensureCapacity();
-        array[size++] = element;
-    }
+    
 
     public void insert(int index, T element) { //joshua
         if (index < 0 || index > size) {
