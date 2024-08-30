@@ -4,7 +4,7 @@ public class DynamicArray<T> {
     private static final int INITIAL_CAPACITY = 10;
 
     public DynamicArray() { 
-        array = new Object[INITIAL_CAPACITY];  
+        array = new Object[INITIAL_CAPACITY];            
         size = 0;
     }
 
