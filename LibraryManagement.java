@@ -7,7 +7,7 @@ public class LibraryManagement {
         library = new DynamicArray<>();      
     }     
 
-    public void displayBook(int index) { //mem4 //castino
+    public void displayBook(int index) { //mem4 
         String book = library.get(index);
         System.out.println("Book at index " + index + ": " + book); 
     }    
