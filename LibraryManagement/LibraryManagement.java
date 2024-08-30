@@ -47,7 +47,43 @@ public class LibraryManagement {
             int choice = scanner.nextInt();
             scanner.nextLine(); // --
 
-
+    }
+    switch (choice) { // joshua
+                case 1:
+                    System.out.print("Enter book name: ");
+                    String addBook = scanner.nextLine();
+                    lms.addBook(addBook);
+                    break;
+                case 2:
+                    System.out.print("Enter index: ");
+                    int insertIndex = scanner.nextInt();
+                    scanner.nextLine(); // consume newline
+                    System.out.print("Enter book name: ");
+                    String insertBook = scanner.nextLine();
+                    lms.insertBook(insertIndex, insertBook);
+                    break;
+                case 3:
+                    System.out.print("Enter index: ");
+                    int removeIndex = scanner.nextInt();
+                    scanner.nextLine(); // consume newline
+                    lms.removeBook(removeIndex);
+                    break;
+                case 4:
+                    System.out.print("Enter index: ");
+                    int displayIndex = scanner.nextInt();
+                    scanner.nextLine(); // consume newline
+                    lms.displayBook(displayIndex);
+                    break;
+                case 5:
+                    lms.displayTotalBooks();
+                    break;
+                case 6:
+                    System.out.println("Exiting...");
+                    scanner.close();
+                    return;
+                default:
+                    System.out.println("Invalid option. Please try again.");
+            }
         }
-    } 
+    }
 } //--
