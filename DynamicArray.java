@@ -31,12 +31,12 @@ public class DynamicArray<T> { //cjay
         array[--size] = null; // Clear the reference 
     } //mem4
 
-    public T get(int index) { //mem5
+    public T get(int index) { //mem4
         if (index < 0 || index >= size) {
             throw new IndexOutOfBoundsException("Index out of bounds");
         }
         return (T) array[index];
-    } //mem5
+    } //mem4
 
     public int size() { //mem2
         return size;
