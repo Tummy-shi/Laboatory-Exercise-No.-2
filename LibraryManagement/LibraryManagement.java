@@ -47,7 +47,7 @@ public class LibraryManagement {
             int choice = scanner.nextInt();
             scanner.nextLine(); // --
 
-    }
+    
     switch (choice) { // joshua
                 case 1:
                     System.out.print("Enter book name: ");
