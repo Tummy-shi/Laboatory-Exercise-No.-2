@@ -32,7 +32,7 @@ public class LibraryManagement {
         System.out.println("Total number of books: " + library.size());
     } //mem2
 
-    public static void main(String[] args) { //cj
+    public static void main(String[] args) { //mem5
         LibraryManagement lms = new LibraryManagement();
         Scanner scanner = new Scanner(System.in);
         while (true) {
@@ -45,9 +45,9 @@ public class LibraryManagement {
             System.out.println("6. Exit");
             System.out.print("Choose an option: ");
             int choice = scanner.nextInt();
-            scanner.nextLine(); // consume newline cj
+            scanner.nextLine(); // consume newline 
 
-            switch (choice) { //mem5
+            switch (choice) { 
                 case 1:
                     System.out.print("Enter book name: ");
                     String addBook = scanner.nextLine();
@@ -62,12 +62,12 @@ public class LibraryManagement {
                     lms.insertBook(insertIndex, insertBook);
                     break;
                 case 3:
-                    System.out.print("Enter index: ");
+                    System.out.print("Enter index: "); //mem5
                     int removeIndex = scanner.nextInt();
                     scanner.nextLine(); // consume newline
                     lms.removeBook(removeIndex);
                     break;
-                case 4:
+                case 4:                             //cjay
                     System.out.print("Enter index: ");
                     int displayIndex = scanner.nextInt();
                     scanner.nextLine(); // consume newline
@@ -85,4 +85,4 @@ public class LibraryManagement {
             }
         }
     }
-} //mem5
+} //cj
