@@ -1,4 +1,4 @@
-public class DynamicArray<T> {  
+public class DynamicArray<T> {       
     private Object[] array;
     private int size;
     private static final int INITIAL_CAPACITY = 10;
