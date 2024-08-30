@@ -23,7 +23,7 @@ public class LibraryManagement {
         System.out.println("Book removed: " + removedBook);     
     }    
 
-    public void displayBook(int index) { //mem4 
+     public void displayBook(int index) { //mem4 
         String book = library.get(index);
         System.out.println("Book at index " + index + ": " + book); 
     }
