@@ -23,20 +23,20 @@ public class DynamicArray<T> { //cjay
         size++; 
     } //mem3
 
-    public void remove(int index) {  //mem5
+    public void remove(int index) {  //mem4
         if (index < 0 || index >= size) {
             throw new IndexOutOfBoundsException("Index out of bounds");
         }
         System.arraycopy(array, index + 1, array, index, size - index - 1);
         array[--size] = null; // Clear the reference 
-    } //mem5
+    } //mem4
 
-    public T get(int index) { //mem4
+    public T get(int index) { //mem5
         if (index < 0 || index >= size) {
             throw new IndexOutOfBoundsException("Index out of bounds");
         }
         return (T) array[index];
-    } //mem4
+    } //mem5
 
     public int size() { //mem2
         return size;
