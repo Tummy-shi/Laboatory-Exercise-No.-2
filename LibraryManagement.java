@@ -23,10 +23,10 @@ public class LibraryManagement {
         System.out.println("Book removed: " + removedBook);
     }
 
-    public void displayBook(int index) { //mem5
+    public void displayBook(int index) { //mem3
         String book = library.get(index);
         System.out.println("Book at index " + index + ": " + book);
-    } //mem5
+    } //mem3
 
     public void displayTotalBooks() { //mem2
         System.out.println("Total number of books: " + library.size());
