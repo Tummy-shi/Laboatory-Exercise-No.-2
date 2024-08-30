@@ -42,9 +42,9 @@ public class DynamicArray<T> { //cjay
         return size;
     } //mem2
 
-    public boolean isEmpty() { //mem5
+    public boolean isEmpty() { //mem2
         return size == 0;
-    } //mem5
+    } //mem2
 
     private void ensureCapacity() { //cj
         if (size == array.length) {
