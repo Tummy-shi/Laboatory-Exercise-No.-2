@@ -1,4 +1,16 @@
+import java.util.Scanner; //cj
 
+public class LibraryManagement {
+    private DynamicArray<String> library; 
+
+    public LibraryManagement() {     
+        library = new DynamicArray<>();      
+    }     
+
+    public void displayBook(int index) { //mem4 
+        String book = library.get(index);
+        System.out.println("Book at index " + index + ": " + book); 
+    }    
 
     public void insertBook(int index, String book) { //me5       
         library.insert(index, book);    
