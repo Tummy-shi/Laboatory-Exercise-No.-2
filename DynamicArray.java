@@ -1,4 +1,4 @@
-public class DynamicArray<T> {       
+public class DynamicArray<T> {      //cj 
     private Object[] array;
     private int size;
     private static final int INITIAL_CAPACITY = 10;        
@@ -6,7 +6,7 @@ public class DynamicArray<T> {
     public DynamicArray() { 
         array = new Object[INITIAL_CAPACITY];            
         size = 0;
-    }     
+    }     //cj
               
     public void add(T element) { //mem2
         ensureCapacity();
@@ -46,7 +46,7 @@ public class DynamicArray<T> {
         return size == 0;     
     } //mem4    
 
-    private void ensureCapacity() {     
+    private void ensureCapacity() {    //cj 
         if (size == array.length) {      
             int newCapacity = array.length * 2;     
             Object[] newArray = new Object[newCapacity];     
