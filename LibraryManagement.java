@@ -23,6 +23,16 @@ public class LibraryManagement {
         System.out.println("Book removed: " + removedBook);     
     }    
 
+    
+    public void displayBook(int index) { //mem4 //Jason
+        String book = library.get(index);
+        System.out.println("Book at index " + index + ": " + book); 
+    }
+
+    public void displayBook(int index) { //mem4 //Jason
+        String book = library.get(index);
+        System.out.println("Book at index " + index + ": " + book); 
+    }
    
 
     public static void main(String[] args) { //cj
@@ -59,10 +69,10 @@ public class LibraryManagement {
             case 3:
                     System.out.print("Enter index: ");
                     int removeIndex = scanner.nextInt();
-                    scanner.nextLine(); // consume newline
+                    scanner.nextLine(); // consume newline //Jason
                     lms.removeBook(removeIndex);
                     break;
-                                              //Jason
+                                             
                 case 4:
                     System.out.print("Enter index: ");
                     int displayIndex = scanner.nextInt();
