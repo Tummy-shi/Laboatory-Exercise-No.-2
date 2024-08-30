@@ -23,7 +23,14 @@ public class LibraryManagement {
         System.out.println("Book removed: " + removedBook);
     } //--
 
-    
+    public void displayBook(int index) { //manilag
+        String book = library.get(index);
+        System.out.println("Book at index " + index + ": " + book);
+    }
+
+    public void displayTotalBooks() { 
+        System.out.println("Total number of books: " + library.size());
+    }//--
 
     public static void main(String[] args) { //castino
         LibraryManagement lms = new LibraryManagement();
