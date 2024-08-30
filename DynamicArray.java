@@ -8,7 +8,7 @@ public class DynamicArray<T> {      //cj
         size = 0;
     }    
               
-    public void add(T element) { //mem2
+    public void add(T element) { //mem2 //castino
         ensureCapacity();
         array[size++] = element;
     } //mem2
@@ -24,7 +24,7 @@ public class DynamicArray<T> {      //cj
         size++; 
     } 
 
-    public void remove(int index) {  //mem3
+    public void remove(int index) {  //mem3 //manilag
         if (index < 0 || index >= size) {
             throw new IndexOutOfBoundsException("Index out of bounds");
         }
