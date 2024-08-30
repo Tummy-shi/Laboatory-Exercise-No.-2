@@ -17,7 +17,7 @@ public class LibraryManagement {
         System.out.println("Book inserted at index " + index + ": " + book);
     } //mem2
 
-    public void removeBook(int index) { //mem3
+    public void removeBook(int index) { //mem5
         String removedBook = library.get(index);
         library.remove(index);
         System.out.println("Book removed: " + removedBook);
@@ -26,7 +26,7 @@ public class LibraryManagement {
     public void displayBook(int index) {
         String book = library.get(index);
         System.out.println("Book at index " + index + ": " + book);
-    } 
+    } //mem5
 
     public void displayTotalBooks() {
         System.out.println("Total number of books: " + library.size());
