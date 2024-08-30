@@ -5,34 +5,34 @@ public class LibraryManagement {
 
     public LibraryManagement() {
         library = new DynamicArray<>();
-    }
+    } //--
 
     public void addBook(String book) { //castino
         library.add(book);
         System.out.println("Book added: " + book);
-    }
+    } //--
 
     public void insertBook(int index, String book) { //belen
         library.insert(index, book);
         System.out.println("Book inserted at index " + index + ": " + book);
-    }
+    } //--
 
     public void removeBook(int index) { //belen
         String removedBook = library.get(index);
         library.remove(index);
         System.out.println("Book removed: " + removedBook);
-    }
+    } //--
 
     public void displayBook(int index) { //manilag
         String book = library.get(index);
         System.out.println("Book at index " + index + ": " + book);
     }
 
-    public void displayTotalBooks() { //manilag
+    public void displayTotalBooks() { 
         System.out.println("Total number of books: " + library.size());
-    }
+    }//--
 
-    public static void main(String[] args) { //amancio
+    public static void main(String[] args) { //castino
         LibraryManagement lms = new LibraryManagement();
         Scanner scanner = new Scanner(System.in);
         while (true) {
@@ -45,7 +45,7 @@ public class LibraryManagement {
             System.out.println("6. Exit");
             System.out.print("Choose an option: ");
             int choice = scanner.nextInt();
-            scanner.nextLine(); // consume newline
+            scanner.nextLine(); // --
 
             switch (choice) { //vardeleon
                 case 1:
@@ -67,7 +67,7 @@ public class LibraryManagement {
                     scanner.nextLine(); // consume newline
                     lms.removeBook(removeIndex);
                     break;
-                case 4: //castino
+                case 4: 
                     System.out.print("Enter index: ");
                     int displayIndex = scanner.nextInt();
                     scanner.nextLine(); // consume newline
@@ -85,4 +85,4 @@ public class LibraryManagement {
             }
         }
     } 
-}
+} //--
