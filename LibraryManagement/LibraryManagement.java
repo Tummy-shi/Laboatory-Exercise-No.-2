@@ -7,10 +7,7 @@ public class LibraryManagement {
         library = new DynamicArray<>();
     }
 
-    public void addBook(String book) { //castino
-        library.add(book);
-        System.out.println("Book added: " + book);
-    }
+    
 
     public void insertBook(int index, String book) { //belen
         library.insert(index, book);
