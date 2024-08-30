@@ -7,9 +7,9 @@ public class LibraryManagement {
         library = new DynamicArray<>();      
     }     
 
-    public void addBook(String book) { //mem2    
-        library.add(book);    
-        System.out.println("Book added: " + book);    
+    public void displayBook(int index) { //mem4 
+        String book = library.get(index);
+        System.out.println("Book at index " + index + ": " + book); 
     }    
 
     public void insertBook(int index, String book) { //me5       
@@ -28,8 +28,9 @@ public class LibraryManagement {
         System.out.println("Book at index " + index + ": " + book); 
     }
 
-    public void displayTotalBooks() { //mem2
-        System.out.println("Total number of books: " + library.size());
+    public void displayBook(int index) { //mem4 
+        String book = library.get(index);
+        System.out.println("Book at index " + index + ": " + book); 
     }
 
     public static void main(String[] args) { //cj
@@ -53,7 +54,7 @@ public class LibraryManagement {
                     String addBook = scanner.nextLine();
                     lms.addBook(addBook);
                     break;
-                case 2:
+                case 2:  
                     System.out.print("Enter index: ");
                     int insertIndex = scanner.nextInt();
                     scanner.nextLine(); // consume newline
