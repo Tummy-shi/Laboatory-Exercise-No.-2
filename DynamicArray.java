@@ -38,7 +38,13 @@ public class DynamicArray<T> {
         return (T) array[index];
     }
 
+    public int size() {
+        return size;
+    }
 
+    public boolean isEmpty() {
+        return size == 0;
+    }
 
     private void ensureCapacity() {
         if (size == array.length) {
