@@ -8,7 +8,10 @@ public class DynamicArray<T> {      //cj
         size = 0;
     }    
               
-    
+    public void add(T element) { //castino
+        ensureCapacity();
+        array[size++] = element;
+    } //mem2
                          
 
     public void insert(int index, T element) { // joshua
