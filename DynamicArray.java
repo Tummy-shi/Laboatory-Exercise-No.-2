@@ -42,7 +42,9 @@ public class DynamicArray<T> { //amancio
         return size;
     }
 
-    
+    public boolean isEmpty() { //castino
+        return size == 0;
+    }
 
     private void ensureCapacity() { //amancio
         if (size == array.length) {
