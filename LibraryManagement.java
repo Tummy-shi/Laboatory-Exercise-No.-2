@@ -32,7 +32,7 @@ public class LibraryManagement {
         System.out.println("Total number of books: " + library.size());
     }
 
-    public static void main(String[] args) {
+    public static void main(String[] args) { //cj
         LibraryManagement lms = new LibraryManagement();
         Scanner scanner = new Scanner(System.in);
         while (true) {
