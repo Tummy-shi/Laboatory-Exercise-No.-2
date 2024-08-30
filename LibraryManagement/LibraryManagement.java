@@ -17,11 +17,7 @@ public class LibraryManagement {
         System.out.println("Book inserted at index " + index + ": " + book);
     } //--
 
-    public void removeBook(int index) { //belen
-        String removedBook = library.get(index);
-        library.remove(index);
-        System.out.println("Book removed: " + removedBook);
-    } //--
+   
 
     public void displayBook(int index) { //manilag
         String book = library.get(index);
