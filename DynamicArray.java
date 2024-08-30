@@ -22,9 +22,14 @@ public class DynamicArray<T> { //amancio
         array[index] = element;
         size++;
     }
-
+    public void remove(int index) { //Belen
+        if (index < 0 || index >= size) {
+            throw new IndexOutOfBoundsException("Index out of bounds");
+        }
+        System.arraycopy(array, index + 1, array, index, size - index - 1);
+        array[--size] = null; // Clear the reference
+    }
   
-
     public T get(int index) { //manilag
         if (index < 0 || index >= size) {
             throw new IndexOutOfBoundsException("Index out of bounds");
