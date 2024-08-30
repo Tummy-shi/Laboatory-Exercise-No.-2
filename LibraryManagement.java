@@ -1,23 +1,23 @@
-import java.util.Scanner;
+import java.util.Scanner; //cj
 
 public class LibraryManagement {
     private DynamicArray<String> library;
 
     public LibraryManagement() {
         library = new DynamicArray<>();
-    }
+    } //cj
 
-    public void addBook(String book) {
+    public void addBook(String book) { //mem2
         library.add(book);
         System.out.println("Book added: " + book);
-    }
+    } 
 
     public void insertBook(int index, String book) {
         library.insert(index, book);
         System.out.println("Book inserted at index " + index + ": " + book);
-    }
+    } //mem2
 
-    public void removeBook(int index) {
+    public void removeBook(int index) { //mem3
         String removedBook = library.get(index);
         library.remove(index);
         System.out.println("Book removed: " + removedBook);
@@ -26,13 +26,13 @@ public class LibraryManagement {
     public void displayBook(int index) {
         String book = library.get(index);
         System.out.println("Book at index " + index + ": " + book);
-    }
+    } 
 
     public void displayTotalBooks() {
         System.out.println("Total number of books: " + library.size());
-    }
+    } //mem3
 
-    public static void main(String[] args) {
+    public static void main(String[] args) { //mem4
         LibraryManagement lms = new LibraryManagement();
         Scanner scanner = new Scanner(System.in);
         while (true) {
@@ -45,9 +45,9 @@ public class LibraryManagement {
             System.out.println("6. Exit");
             System.out.print("Choose an option: ");
             int choice = scanner.nextInt();
-            scanner.nextLine(); // consume newline
+            scanner.nextLine(); // consume newline mem4
 
-            switch (choice) {
+            switch (choice) { //mem5
                 case 1:
                     System.out.print("Enter book name: ");
                     String addBook = scanner.nextLine();
@@ -85,4 +85,4 @@ public class LibraryManagement {
             }
         }
     }
-}
+} //mem5
