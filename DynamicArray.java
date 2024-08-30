@@ -42,16 +42,16 @@ public class DynamicArray<T> {
         return size;
     } //mem2
 
-    public boolean isEmpty() { //mem4
-        return size == 0;
-    } //mem4
+    public boolean isEmpty() { //mem4    
+        return size == 0;     
+    } //mem4    
 
-    private void ensureCapacity() { 
-        if (size == array.length) {
-            int newCapacity = array.length * 2;
-            Object[] newArray = new Object[newCapacity];
-            System.arraycopy(array, 0, newArray, 0, size);
-            array = newArray;
+    private void ensureCapacity() {     
+        if (size == array.length) {      
+            int newCapacity = array.length * 2;     
+            Object[] newArray = new Object[newCapacity];     
+            System.arraycopy(array, 0, newArray, 0, size);      
+            array = newArray;      
         }
     } 
 } 
