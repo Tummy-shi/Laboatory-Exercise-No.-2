@@ -54,6 +54,16 @@ public class LibraryManagement {
                     String addBook = scanner.nextLine();
                     lms.addBook(addBook);
                     break;
+            
+                case 2:
+                    System.out.print("Enter index: ");
+                    int insertIndex = scanner.nextInt();
+                    scanner.nextLine(); // consume newline
+                    System.out.print("Enter book name: ");
+                    String insertBook = scanner.nextLine();
+                    lms.insertBook(insertIndex, insertBook);
+                    break;
+
               
                 case 3:
                     System.out.print("Enter index: ");
