@@ -13,15 +13,7 @@ public class DynamicArray<T> { //amancio
         array[size++] = element;
     }
 
-    public void insert(int index, T element) { //joshua
-        if (index < 0 || index > size) {
-            throw new IndexOutOfBoundsException("Index out of bounds");
-        }
-        ensureCapacity();
-        System.arraycopy(array, index, array, index + 1, size - index);
-        array[index] = element;
-        size++;
-    }
+
 
     public void remove(int index) { //belen
         if (index < 0 || index >= size) {
