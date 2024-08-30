@@ -32,20 +32,7 @@ public class LibraryManagement {
         System.out.println("Total number of books: " + library.size());
     }//--
 
-    public static void main(String[] args) { //castino
-        LibraryManagement lms = new LibraryManagement();
-        Scanner scanner = new Scanner(System.in);
-        while (true) {
-            System.out.println("\nLibrary Management System");
-            System.out.println("1. Add Book");
-            System.out.println("2. Insert Book");
-            System.out.println("3. Remove Book");
-            System.out.println("4. Display Book");
-            System.out.println("5. Display Total Books");
-            System.out.println("6. Exit");
-            System.out.print("Choose an option: ");
-            int choice = scanner.nextInt();
-            scanner.nextLine(); // --
+    
 
     
     switch (choice) { // joshua
