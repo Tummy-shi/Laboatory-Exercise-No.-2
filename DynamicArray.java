@@ -31,7 +31,16 @@ public class DynamicArray<T> { //amancio
         array[--size] = null; // Clear the reference
     }
 
-    
+    public T get(int index) { //manilag
+        if (index < 0 || index >= size) {
+            throw new IndexOutOfBoundsException("Index out of bounds");
+        }
+        return (T) array[index];
+    }
+
+    public int size() { // manilag
+        return size;
+    }
 
     public boolean isEmpty() { //castino
         return size == 0;
