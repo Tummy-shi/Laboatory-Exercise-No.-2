@@ -38,7 +38,10 @@ public class DynamicArray<T> {      //cj
         return (T) array[index];
     } //mem4
 
-  
+    public int size() { //mem2
+        return size;
+    } //mem2
+                         //Jason
 
     public boolean isEmpty() { //mem4    
         return size == 0;     
