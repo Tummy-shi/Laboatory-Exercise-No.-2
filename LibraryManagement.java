@@ -12,10 +12,10 @@ public class LibraryManagement {
         System.out.println("Book added: " + book);
     } 
 
-    public void insertBook(int index, String book) {
+    public void insertBook(int index, String book) {//mem3
         library.insert(index, book);
         System.out.println("Book inserted at index " + index + ": " + book);
-    } //mem2
+    } //mem3
 
     public void removeBook(int index) { //mem5
         String removedBook = library.get(index);
@@ -28,9 +28,9 @@ public class LibraryManagement {
         System.out.println("Book at index " + index + ": " + book);
     } //mem5
 
-    public void displayTotalBooks() {
+    public void displayTotalBooks() { //mem2
         System.out.println("Total number of books: " + library.size());
-    } //mem3
+    } //mem2
 
     public static void main(String[] args) { //cj
         LibraryManagement lms = new LibraryManagement();
