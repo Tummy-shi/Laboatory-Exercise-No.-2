@@ -12,11 +12,6 @@ public class LibraryManagement {
         System.out.println("Book added: " + book);
     } //--
 
-    public void insertBook(int index, String book) { //belen
-        library.insert(index, book);
-        System.out.println("Book inserted at index " + index + ": " + book);
-    } //--
-
    
 
     public void displayBook(int index) { //manilag
