@@ -20,7 +20,7 @@ public class DynamicArray<T> {
         ensureCapacity();
         System.arraycopy(array, index, array, index + 1, size - index);
         array[index] = element;
-        size++; //mem5
+        size++; //mem5 **DONE**
     } 
 
     public void remove(int index) {  //mem3
