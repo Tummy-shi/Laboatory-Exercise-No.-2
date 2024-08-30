@@ -42,9 +42,9 @@ public class DynamicArray<T> {      //cj
     public int size() { //mem2 //castino
         return size;
     } //mem2
-                         //Jason
+                      
 
-    public boolean isEmpty() { //mem4    
+    public boolean isEmpty() { //mem4  //Jason
         return size == 0;     
     } //mem4    
 
