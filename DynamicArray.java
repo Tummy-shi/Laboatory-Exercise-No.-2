@@ -12,6 +12,7 @@ public class DynamicArray<T> {      //cj
         ensureCapacity();
         array[size++] = element;
     } //mem2
+                            //Jason
 
     public void insert(int index, T element) { // joshua
         if (index < 0 || index > size) {
