@@ -17,13 +17,13 @@ public class LibraryManagement {
         System.out.println("Book inserted at index " + index + ": " + book);
     } //mem3
 
-    public void removeBook(int index) { //mem5
+    public void removeBook(int index) { //mem4
         String removedBook = library.get(index);
         library.remove(index);
         System.out.println("Book removed: " + removedBook);
     }
 
-    public void displayBook(int index) {
+    public void displayBook(int index) { //mem5
         String book = library.get(index);
         System.out.println("Book at index " + index + ": " + book);
     } //mem5
