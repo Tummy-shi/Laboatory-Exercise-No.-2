@@ -8,20 +8,20 @@ public class DynamicArray<T> {
         size = 0;
     }
 
-    public void add(T element) { 
+    public void add(T element) { //mem2
         ensureCapacity();
         array[size++] = element;
-    }
+    } //mem2
 
-    public void insert(int index, T element) {//mem2
+    public void insert(int index, T element) { //mem5
         if (index < 0 || index > size) {
             throw new IndexOutOfBoundsException("Index out of bounds");
         }
         ensureCapacity();
         System.arraycopy(array, index, array, index + 1, size - index);
         array[index] = element;
-        size++; 
-    } //mem2
+        size++; //mem5
+    } 
 
     public void remove(int index) {  //mem3
         if (index < 0 || index >= size) {
@@ -38,13 +38,13 @@ public class DynamicArray<T> {
         return (T) array[index];
     } //mem4
 
-    public int size() {
+    public int size() { //mem2
         return size;
-    } //mem4
+    } //mem2
 
-    public boolean isEmpty() { //mem5
+    public boolean isEmpty() { //mem4
         return size == 0;
-    } 
+    } //mem4
 
     private void ensureCapacity() { 
         if (size == array.length) {
@@ -53,5 +53,5 @@ public class DynamicArray<T> {
             System.arraycopy(array, 0, newArray, 0, size);
             array = newArray;
         }
-    } //mem5
+    } 
 } 
