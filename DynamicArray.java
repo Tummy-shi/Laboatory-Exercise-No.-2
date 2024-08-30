@@ -12,7 +12,7 @@ public class DynamicArray<T> {      //cj
         ensureCapacity();
         array[size++] = element;
     } //mem2
-                            //Jason
+                         
 
     public void insert(int index, T element) { // joshua
         if (index < 0 || index > size) {
@@ -48,12 +48,4 @@ public class DynamicArray<T> {      //cj
         return size == 0;     
     } //mem4    
 
-    private void ensureCapacity() {    //cj 
-        if (size == array.length) {      
-            int newCapacity = array.length * 2;     
-            Object[] newArray = new Object[newCapacity];     
-            System.arraycopy(array, 0, newArray, 0, size);      
-            array = newArray;      
-        }
-    } 
-} 
+   
