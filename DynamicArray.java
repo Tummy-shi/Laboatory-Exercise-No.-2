@@ -1,9 +1,9 @@
-public class DynamicArray<T> { 
+public class DynamicArray<T> {  
     private Object[] array;
     private int size;
     private static final int INITIAL_CAPACITY = 10;
 
-    public DynamicArray() {
+    public DynamicArray() { 
         array = new Object[INITIAL_CAPACITY];  
         size = 0;
     }
