@@ -47,7 +47,7 @@ public class LibraryManagement {
             int choice = scanner.nextInt();
             scanner.nextLine(); // consume newline
 
-            switch (choice) { //mem5
+            switch (choice) { //joshua
                 case 1:
                     System.out.print("Enter book name: ");
                     String addBook = scanner.nextLine();
