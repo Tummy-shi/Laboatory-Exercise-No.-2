@@ -63,7 +63,14 @@ public class LibraryManagement {
                     String insertBook = scanner.nextLine();
                     lms.insertBook(insertIndex, insertBook);
                     break;
-                
+
+            case 3:
+                    System.out.print("Enter index: ");
+                    int removeIndex = scanner.nextInt();
+                    scanner.nextLine(); // consume newline
+                    lms.removeBook(removeIndex);
+                    break;
+                                              //Jason
                 case 4:
                     System.out.print("Enter index: ");
                     int displayIndex = scanner.nextInt();
