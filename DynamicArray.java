@@ -6,8 +6,8 @@ public class DynamicArray<T> {
     public DynamicArray() { 
         array = new Object[INITIAL_CAPACITY];            
         size = 0;
-    }
-        
+    }     
+              
     public void add(T element) { //mem2
         ensureCapacity();
         array[size++] = element;
