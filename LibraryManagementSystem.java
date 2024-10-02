@@ -26,7 +26,11 @@ class Library {
         deletedBooks = new Stack<>();
     }
 
-   
+    // Add a book
+    public void addBook(String title, String author) {
+        books.add(new Book(title, author));
+    }
+
     // View all books
     public void viewBooks() {
         if (books.isEmpty()) {
