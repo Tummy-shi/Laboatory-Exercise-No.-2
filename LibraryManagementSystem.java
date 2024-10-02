@@ -61,7 +61,16 @@ class Library {
     }
 
     // Remove a book and push to stack
- 
+    public void removeBook(String title) {
+       for (int i = 0; i < books.size(); i++) {
+         if (books.get(i).title.equalsIgnoreCase(title)) {
+                deletedBooks.push(books.remove(i));
+                System.out.println("Removed book: " + title);
+           return;
+        }
+    }
+      System.out.println("Book not found.");
+    }
 
     // Restore last removed book
     public void restoreLastRemoved() {
