@@ -1,4 +1,30 @@
+import java.util.ArrayList;
+import java.util.Stack;
+import java.util.Scanner;
 
+class Book {
+    String title;
+    String author;
+
+    Book(String title, String author) {
+        this.title = title;
+        this.author = author;
+    }
+
+    @Override
+    public String toString() {
+        return "Title: " + title + ", Author: " + author;
+    }
+}
+
+class Library {
+    private ArrayList<Book> books;
+    private Stack<Book> deletedBooks;
+
+    public Library() {
+        books = new ArrayList<>();
+        deletedBooks = new Stack<>();
+    }
 
     // Add a book
     public void addBook(String title, String author) {
@@ -17,22 +43,7 @@
     }
 
     // Selection sort to sort books by title
-    public void sortBooks() {
-        int n = books.size();
-        for (int i = 0; i < n - 1; i++) {
-            int minIdx = i;
-            for (int j = i + 1; j < n; j++) {
-                if (books.get(j).title.compareTo(books.get(minIdx).title) < 0) {
-                    minIdx = j;
-                }
-            }
-            // Swap
-            Book temp = books.get(minIdx);
-            books.set(minIdx, books.get(i));
-            books.set(i, temp);
-        }
-        System.out.println("Books sorted by title.");
-    }
+   
 
     // Remove a book and push to stack
     public void removeBook(String title) {
