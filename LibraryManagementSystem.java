@@ -32,18 +32,25 @@ class Library {
     }
 
     // View all books
-    public void viewBooks() {
-        if (books.isEmpty()) {
-            System.out.println("No books available.");
-            return;
-        }
-        for (Book book : books) {
-            System.out.println(book);
-        }
-    }
+   
 
     // Selection sort to sort books by title
-   
+    public void sortBooks() {
+        int n = books.size();
+        for (int i = 0; i < n - 1; i++) {
+            int minIdx = i;
+            for (int j = i + 1; j < n; j++) {
+                if (books.get(j).title.compareTo(books.get(minIdx).title) < 0) {
+                    minIdx = j;
+                }
+            }
+            // Swap
+            Book temp = books.get(minIdx);
+            books.set(minIdx, books.get(i));
+            books.set(i, temp);
+        }
+        System.out.println("Books sorted by title.");
+    }
 
     // Remove a book and push to stack
     public void removeBook(String title) {
