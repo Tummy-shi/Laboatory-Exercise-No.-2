@@ -1,30 +1,4 @@
-import java.util.ArrayList;
-import java.util.Stack;
-import java.util.Scanner;
 
-class Book {
-    String title;
-    String author;
-
-    Book(String title, String author) {
-        this.title = title;
-        this.author = author;
-    }
-
-    @Override
-    public String toString() {
-        return "Title: " + title + ", Author: " + author;
-    }
-}
-
-class Library {
-    private ArrayList<Book> books;
-    private Stack<Book> deletedBooks;
-
-    public Library() {
-        books = new ArrayList<>();
-        deletedBooks = new Stack<>();
-    }
 
     // Add a book
     public void addBook(String title, String author) {
