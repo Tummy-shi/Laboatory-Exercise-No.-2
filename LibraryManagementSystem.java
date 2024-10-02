@@ -32,7 +32,15 @@ class Library {
     }
 
     // View all books
-   
+    public void viewBooks() {
+        if (books.isEmpty()) {
+            System.out.println("No books available.");
+            return;
+        }
+        for (Book book : books) {
+            System.out.println(book);
+        }
+    }
 
     // Selection sort to sort books by title
     public void sortBooks() {
